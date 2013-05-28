@@ -33,7 +33,15 @@ class ScraperController {
     Scraper scraper
 
 	def index = {
-        String url = params.url
+        String url = canonicalUrl(params.url)
         render scraper.scrapContent(url) as JSON
 	}
+
+
+    def canonicalUrl = {
+        if(it && !it.startsWith("http")){
+            return "http://"+it
+        }
+        return it
+    }
 }
