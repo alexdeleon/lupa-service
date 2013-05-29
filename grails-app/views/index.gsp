@@ -3,6 +3,15 @@
 	<head>
 		<title>Lupa's scraper service</title>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<style type="text/css">
+		    body{
+		        font-family: "MrsEavesXLSerRRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 1.05em;
+                line-height: 1.5em;
+                color: #111111;
+		    }
+		</style>
+
 	</head>
 	<body>
 		<form method="get" action="scraper">
